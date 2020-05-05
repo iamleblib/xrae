@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Registration</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+		
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+<div id="google_translate_element"></div>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+	<body>
+
+<div class="limiter">
+    <div class="container-login100" style="background: url('../sign/img/banner-bg-02.jpg');">
+
+
+<!-- Modal -->
+<label style="cursor: pointer; box-shadow: white 0px 2px 6px 0px; padding: 10px" data-toggle="modal" data-target="#Modal-vert-center-demo" class="float-right btn-sm btn-success">Login <i class="fa fa-sign-in"></i></label>
+<!-- Modal start -->
+
+<div class="modal fade col-12" id="Modal-vert-center-demo" tabindex="-1" role="dialog" aria-labelledby="Modal-vert-center-demo-label" aria-hidden="true">
+ 
+  <div class="modal-dialog modal-dialog-centered" role="document">
+ 
+    <div class="modal-content">
+ 
+      <div class="modal-header bg-success">
+ 
+        <h5 class="modal-title text-light" id="Modal-vert-center-demo-label">Login</h5>
+ 
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+ 
+          <span aria-hidden="true">&times;</span>
+ 
+        </button>
+ 
+      </div>
+ 
+      <div class="modal-body">
+
+              <form action="functions.php" method="POST" autocomplete="on" class="">
+                            <center>
+                          <img src="../btc.png" width="100px" style="border-radius: 100pc" class="text-align-center">   <p>Login to your to BitraxCoin Account</p>
+                        </center>
+        
+
+
+                          <div class="wrap-input100" data-validate = "Valid email e.g: name@info.ex">
+                            <input class="input100 text-dark" required="" type="email" name="email">
+                            <span class="focus-input100" data-placeholder="Email"></span>
+                          </div>
+
+                          <div class="wrap-input100" data-validate="Enter password">
+                            <span class="btn-show-pass">
+                              <i class="fa fa-eye"></i>
+                            </span>
+                            <input class="input100 text-dark" required="" type="password" name="password">
+                            
+                            <span class="focus-input100" data-placeholder="Password"></span>
+                          </div>
+                          <?php 
+                            if (isset($_GET['success'])) {
+                                    
+                                  } 
+                                  else if (isset($_GET['failed'])) {
+                                    echo "<script type='text/javascript'>alert ('Incorrect Login Details')</script>";
+                                  
+                                  } ?>
+
+                            <a class="txt2" data-dismiss="modal">
+                              <span class="btn btn-outline-info btn-lg float-right" style="float: right;">
+                              Register <i class="fa fa-sign-in"></i>
+                            </span>
+                          </a>
+                              <button name="login" class="btn btn-success btn-lg" style="float: left; width: 32%; font-size: 15px">
+                              LOGIN
+                            </button>
+                        </form>
+ 
+      </div>
+ 
+      <div class="modal-footer">
+ 
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+ 
+ 
+ 
+      </div>
+ 
+    </div>
+ 
+  </div>
+ 
+</div>
+
+
+
+ <?php  
+              if (isset($_GET['empty'])) {
+               echo "<div class='alert alert-warning'>
+ 
+            <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+ 
+                <span aria-hidden='true'>&times;</span>
+ 
+              </button>
+                <h3 class='text-danger'>Empty field <i class='fa fa-exclamation-triangle' aria-hidden='true'></i></h3>
+ 
+            </div>
+                ";
+                 }
+               ?>
+ 
+  <?php  
+                      if (isset($_GET['empty'])) {
+                      }  else if (isset($_GET['short'])) {
+                        echo "<div class='alert alert-warning'>
+ 
+            <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+ 
+                <span aria-hidden='true'>&times;</span>
+ 
+              </button>
+ 
+                <p class='text-danger'>Password Too short<i class='fa fa-exclamation-triangle' aria-hidden='true'></i></p>
+ 
+            </div>";
+                      } else if (isset($_GET['missmatch'])) {
+                        echo "
+                        <div class='alert alert-warning'>
+ 
+            <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+ 
+                <span aria-hidden='true'>&times;</span>
+ 
+              </button>
+ 
+                <p class='text-danger'>Password does not Match <i class='fa fa-exclamation-triangle' aria-hidden='true'></i></p>
+ 
+            </div>
+                ";
+                      }
+                ?>
+
+                <?php  
+                      if (isset($_GET['empty'])) {
+                      }  else if (isset($_GET['exist'])) {
+                        echo "<div class='alert alert-warning'>
+ 
+            <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+ 
+                <span aria-hidden='true'>&times;</span>
+ 
+              </button>
+ 
+                <p class='text-danger'><i class='fa fa-exclamation-triangle' aria-hidden='true'></i> Email Already taken</p>
+ 
+            </div>";
+                      } else if (isset($_GET['email_error'])) {
+                        echo "
+                        <div class='alert alert-warning'>
+ 
+            <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+ 
+                <span aria-hidden='true'>&times;</span>
+ 
+              </button>
+ 
+                <p class='text-danger'>Invalid Email<i class='fa fa-exclamation-triangle' aria-hidden='true'></i></p>
+ 
+            </div>
+                ";
+                      }
+                ?>             
+
+
+		<div class="wrapper" style="background-image: url('images/bg-registration-form-2.jpg');">
+			<div class="inner">
+				<form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST" autocomplete="off" class="validate-form">
+					<h3>Registration Form</h3>
+					<div class="form-group">
+						<div class="form-wrapper wrap-input100 validate-input">
+							<label for="">First Name</label>
+							<input class="input100" type="text" name="full_name">
+            				<span class="focus-input100" data-placeholder="Full name"></span>
+						</div>
+						<div class="form-wrapper">
+							<label for="">Last Name</label>
+							<input type="text" class="form-control">
+						</div>
+					</div>
+					<div class="form-wrapper">
+						<label for="">Email</label>
+						<input type="text" class="form-control">
+					</div>
+					<div class="form-wrapper">
+						<label for="">Password</label>
+						<input type="password" class="form-control">
+					</div>
+					<div class="form-wrapper">
+						<label for="">Confirm Password</label>
+						<input type="password" class="form-control">
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox"> I caccept the Terms of Use & Privacy Policy.
+							<span class="checkmark"></span>
+						</label>
+					</div>
+					<button>Register Now</button>
+				</form>
+			</div>
+		</div>
+		
+	</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>

@@ -1,0 +1,292 @@
+/* :: 5.0 Header Area CSS */
+.header-area {
+  position: relative;
+  z-index: 100;
+  width: 100%; }
+  .header-area .top-header {
+    width: 100%;
+    height: 60px;
+    background-color: #292929; }
+    @media only screen and (max-width: 767px) {
+      .header-area .top-header {
+        height: 80px;
+        padding: 15px 0; } }
+    @media only screen and (max-width: 767px) {
+      .header-area .top-header .top-header-content {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap; } }
+    .header-area .top-header .top-headline p {
+      margin-bottom: 0;
+      font-family: "Montserrat", sans-serif;
+      color: #ffffff;
+      font-size: 12px;
+      font-weight: 400; }
+      .header-area .top-header .top-headline p span {
+        color: #ffaf02; }
+    .header-area .top-header .login-faq-earn-money a {
+      display: inline-block;
+      font-family: "Montserrat", sans-serif;
+      color: #ffffff;
+      font-size: 12px;
+      font-weight: 400;
+      margin-right: 30px; }
+      .header-area .top-header .login-faq-earn-money a:last-child {
+        margin-right: 0; }
+      .header-area .top-header .login-faq-earn-money a:hover, .header-area .top-header .login-faq-earn-money a:focus, .header-area .top-header .login-faq-earn-money a.active {
+        color: #ffaf02; }
+  .header-area .cryptos-main-menu {
+    position: relative;
+    width: 100%;
+    z-index: 100;
+    height: 125px; }
+    @media only screen and (max-width: 767px) {
+      .header-area .cryptos-main-menu {
+        height: 80px; } }
+    .header-area .cryptos-main-menu .classy-nav-container {
+      background-color: transparent; }
+    .header-area .cryptos-main-menu .classy-navbar {
+      height: 125px;
+      padding: 0; }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .header-area .cryptos-main-menu .classy-navbar {
+          padding: 0; } }
+      @media only screen and (max-width: 767px) {
+        .header-area .cryptos-main-menu .classy-navbar {
+          height: 80px; } }
+      .header-area .cryptos-main-menu .classy-navbar .classynav ul li a {
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: capitalize; }
+        .header-area .cryptos-main-menu .classy-navbar .classynav ul li a:hover, .header-area .cryptos-main-menu .classy-navbar .classynav ul li a:focus {
+          color: #ffaf02; }
+    .header-area .cryptos-main-menu .classynav ul li .dropdown li a,
+    .header-area .cryptos-main-menu .classynav ul li .megamenu li a {
+      font-size: 14px; }
+    .header-area .cryptos-main-menu .classynav .header-newsletter-form {
+      margin-left: 100px; }
+      @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        .header-area .cryptos-main-menu .classynav .header-newsletter-form {
+          margin-left: 30px; } }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .header-area .cryptos-main-menu .classynav .header-newsletter-form {
+          margin-left: 18px;
+          margin-top: 15px; } }
+      @media only screen and (max-width: 767px) {
+        .header-area .cryptos-main-menu .classynav .header-newsletter-form {
+          margin-left: 18px;
+          margin-top: 15px; } }
+      .header-area .cryptos-main-menu .classynav .header-newsletter-form form {
+        width: 265px;
+        height: 35px;
+        background-color: #eef3f6;
+        position: relative;
+        z-index: 1; }
+        @media only screen and (min-width: 992px) and (max-width: 1199px) {
+          .header-area .cryptos-main-menu .classynav .header-newsletter-form form {
+            width: 220px; } }
+        .header-area .cryptos-main-menu .classynav .header-newsletter-form form input {
+          width: 100%;
+          height: 35px;
+          border: none;
+          background-color: transparent;
+          padding: 0 15px;
+          font-size: 12px;
+          font-style: italic; }
+        .header-area .cryptos-main-menu .classynav .header-newsletter-form form button {
+          width: 90px;
+          height: 35px;
+          border: none;
+          background-color: #eef3f6;
+          position: absolute;
+          top: 0;
+          right: 0;
+          font-size: 12px;
+          font-weight: 600;
+          color: #292929;
+          cursor: pointer;
+          border-bottom: 2px solid #ffaf02;
+          -webkit-transition-duration: 500ms;
+          transition-duration: 500ms; }
+          .header-area .cryptos-main-menu .classynav .header-newsletter-form form button:hover {
+            background-color: #292929;
+            color: #ffaf02; }
+
+.megamenu-slides .owl-prev,
+.megamenu-slides .owl-next {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  color: #ffffff;
+  top: 50%;
+  margin-top: -15px;
+  left: 5%;
+  position: absolute;
+  z-index: 10;
+  text-align: center;
+  font-size: 18px;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms; }
+.megamenu-slides .owl-next {
+  left: auto;
+  right: 5%; }
+
+/* :: 6.0 Welcome Area CSS */
+.hero-slides {
+  position: relative;
+  z-index: 1; }
+  .hero-slides .single-hero-slide {
+    width: 100%;
+    height: 850px;
+    position: relative;
+    z-index: 1;
+    background: #0d104d;
+    background: -webkit-linear-gradient(to right, #0d104d, black);
+    background: linear-gradient(to right, #0d104d, black); }
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      .hero-slides .single-hero-slide {
+        height: 650px; } }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .hero-slides .single-hero-slide {
+        height: 600px; } }
+    @media only screen and (max-width: 767px) {
+      .hero-slides .single-hero-slide {
+        height: 800px; } }
+    .hero-slides .single-hero-slide h2 {
+      font-size: 68px;
+      color: #ffffff;
+      margin-bottom: 30px;
+      font-weight: 600; }
+      @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        .hero-slides .single-hero-slide h2 {
+          font-size: 48px; } }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .hero-slides .single-hero-slide h2 {
+          font-size: 42px; } }
+      @media only screen and (max-width: 767px) {
+        .hero-slides .single-hero-slide h2 {
+          font-size: 30px; } }
+      .hero-slides .single-hero-slide h2 span {
+        color: #ffaf02; }
+    .hero-slides .single-hero-slide h6 {
+      color: #ffffff;
+      margin-bottom: 60px;
+      line-height: 2;
+      font-weight: 400; }
+    .hero-slides .single-hero-slide .hero-slides-thumb img {
+      width: 100%; }
+      @media only screen and (max-width: 767px) {
+        .hero-slides .single-hero-slide .hero-slides-thumb img {
+          width: 60%;
+          margin: 0 auto; } }
+  .hero-slides .owl-prev,
+  .hero-slides .owl-next {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: #292929;
+    top: 50%;
+    margin-top: -20px;
+    left: 5%;
+    position: absolute;
+    z-index: 10;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    border-bottom: 2px solid #ffaf02; }
+    @media only screen and (max-width: 767px) {
+      .hero-slides .owl-prev,
+      .hero-slides .owl-next {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        margin-top: -20px; } }
+    .hero-slides .owl-prev:hover, .hero-slides .owl-prev:focus,
+    .hero-slides .owl-next:hover,
+    .hero-slides .owl-next:focus {
+      color: #ffaf02; }
+  .hero-slides .owl-next {
+    left: auto;
+    right: 5%; }
+  .hero-slides:hover .owl-prev, .hero-slides:hover .owl-next {
+    opacity: 1;
+    visibility: visible; }
+
+/* :: 7.0 Feature Area CSS */
+.cryptos-feature-area {
+  position: relative;
+  z-index: 1;
+  padding-left: 45px;
+  padding-right: 45px; }
+  @media only screen and (max-width: 767px) {
+    .cryptos-feature-area {
+      padding-left: 0;
+      padding-right: 0; } }
+
+.single-feature-area {
+  position: relative;
+  z-index: 1;
+  padding: 90px 35px;
+  background-color: #eef3f6;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms; }
+  .single-feature-area i {
+    font-size: 80px;
+    display: block;
+    margin-bottom: 50px;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms; }
+  .single-feature-area h3 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms; }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .single-feature-area h3 {
+        font-size: 24px; } }
+    @media only screen and (max-width: 767px) {
+      .single-feature-area h3 {
+        font-size: 22px; } }
+  .single-feature-area p {
+    display: block;
+    margin-bottom: 50px;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms; }
+  .single-feature-area .cryptos-btn {
+    background-color: #ffffff; }
+  .single-feature-area.active, .single-feature-area:hover, .single-feature-area:focus {
+    background-color: #ffaf02;
+    box-shadow: 0 5px 70px rgba(0, 0, 0, 0.15); }
+    .single-feature-area.active i,
+    .single-feature-area.active h3,
+    .single-feature-area.active p, .single-feature-area:hover i,
+    .single-feature-area:hover h3,
+    .single-feature-area:hover p, .single-feature-area:focus i,
+    .single-feature-area:focus h3,
+    .single-feature-area:focus p {
+      color: #ffffff; }
+    .single-feature-area.active .cryptos-btn, .single-feature-area:hover .cryptos-btn, .single-feature-area:focus .cryptos-btn {
+      border-bottom-color: #292929; }
+      .single-feature-area.active .cryptos-btn:hover, .single-feature-area:hover .cryptos-btn:hover, .single-feature-area:focus .cryptos-btn:hover {
+        border-bottom-color: #292929;
+        color: #292929; }
+  .single-feature-area.style-2 {
+    padding: 0;
+    background-color: #ffffff; }
+    .single-feature-area.style-2 i {
+      color: #ffaf02; }
+    .single-feature-area.style-2 p {
+      margin-bottom: 0; }
+    .single-feature-area.style-2.active, .single-feature-area.style-2:hover, .single-feature-area.style-2:focus {
+      background-color: #ffffff;
+      box-shadow: none; }
+      .single-feature-area.style-2.active i, .single-feature-area.style-2:hover i, .single-feature-area.style-2:focus i {
+        color: #292929; }
+      .single-feature-area.style-2.active h3, .single-feature-area.style-2:hover h3, .single-feature-area.style-2:focus h3 {
+        color: #ffaf02; }
+      .single-feature-area.style-2.active p, .single-feature-area.style-2:hover p, .single-feature-area.style-2:focus p {
+        color: #292929; }
+
